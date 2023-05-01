@@ -2,7 +2,7 @@ FROM jenkins/jenkins:lts-jdk11
 
 USER root
 
-RUN apt-get update &&  apt-get install docker.io -y && apt-get install sudo -y
+RUN apt-get update &&  apt-get install docker.io -y
 
 EXPOSE 8080
 EXPOSE 50000
