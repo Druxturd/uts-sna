@@ -1,0 +1,3 @@
+#!/bin/bash
+docker build --target db -t redlock-db . && docker build --target web -t redlock-web-2.0 .
+docker images

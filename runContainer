@@ -1,0 +1,4 @@
+#!/bin/bash
+docker run -dp 3306:3306 --network redlock-network --name redlock-db-container redlock-db && docker run -dp 7077:80 --network redlock-network --name redlock-web-2.0-container redlock-web-2.0
+docker restart $(docker ps -aq)
+docker ps -a
